@@ -54,66 +54,117 @@ const SalarySlip = () => {
               <>
                 <div className="centerSalarySlip">
                   <Card>
-                    <Card.Header className="managercard">
+                    <Card.Header
+                      className="managercard"
+                      style={{ fontWeight: "bold", fontSize: "25px" }}
+                    >
                       Salary Slip
                     </Card.Header>
 
-                    <Card.Header className="managercard">
+                    <Card.Header
+                      className="managercard"
+                      style={{ fontWeight: "bold", fontSize: "20px" }}
+                    >
                       {ele.employeeName}
                     </Card.Header>
 
                     <Card.Body> </Card.Body>
                   </Card>
 
-                  <div className="content">
+                  <div className="content" style={{ backgroundColor: "white" }}>
                     <table className="tableContainer">
                       <thead>
-                        <tr className="empFields">
-                          <th>Employee ID: {salarySlip2.employeeId}</th>
+                        <tr
+                          className="empFields"
+                          style={{ backgroundColor: "white" }}
+                        >
+                          <th style={{ backgroundColor: "white" }}>
+                            Employee ID: {salarySlip2.employeeId}
+                          </th>
                         </tr>
 
-                        <tr className="empFields">
-                          <th>Designation: {ele.designation}</th>
+                        <tr
+                          className="empFields"
+                          style={{ backgroundColor: "white" }}
+                        >
+                          <th style={{ backgroundColor: "white" }}>
+                            Designation: {ele.designation}
+                          </th>
                         </tr>
 
                         <br />
 
-                        <tr className="heading">
-                          <th>Standard Monthly Salary</th>
+                        <tr
+                          className="heading"
+                          style={{ backgroundColor: "white" }}
+                        >
+                          <th style={{ backgroundColor: "white" }}>
+                            Standard Monthly Salary
+                          </th>
                         </tr>
 
                         <tr>
-                          <th className="dataFields">Basic Pay</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            Basic Pay
+                          </th>
 
                           <td>{salarySlip2.basicPay}</td>
                         </tr>
 
                         <tr>
-                          <th className="dataFields">Allowance</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            Allowance
+                          </th>
 
                           <td>{salarySlip2.allowance}</td>
                         </tr>
 
                         <tr>
-                          <th className="dataFields">Location Pay</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            Location Pay
+                          </th>
 
                           <td>{salarySlip2.locationPay}</td>
                         </tr>
 
                         <tr>
-                          <th className="dataFields">Benefits Pay</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            Benefits Pay
+                          </th>
 
                           <td>{salarySlip2.benefitsPay}</td>
                         </tr>
 
                         <tr>
-                          <th className="dataFields">PF Contribution</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            PF Contribution
+                          </th>
 
                           <td>{salarySlip2.pfContribution}</td>
                         </tr>
 
                         <tr className="salary">
-                          <th className="dataFields">Net Pay</th>
+                          <th
+                            className="dataFields"
+                            style={{ backgroundColor: "white" }}
+                          >
+                            Net Pay
+                          </th>
 
                           <td>{salarySlip2.salaryAmount}</td>
                         </tr>
