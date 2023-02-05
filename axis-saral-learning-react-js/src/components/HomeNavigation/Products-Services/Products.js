@@ -1,22 +1,19 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
-// import ManagerProjectNav from "./ManagerProjectNav";
 import axios from "axios";
 import Card from "react-bootstrap/Card";
 import "./Product.css";
 import ProductServices from "./ProductServices";
-import { useNavigate } from "react-router-dom";
 
 const Products = () => {
   const [productData, setProductData] = useState([]);
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:8089/products").then((response) => {
       setProductData(response.data);
     });
   }, []);
+
   return (
     <>
       <ProductServices />
