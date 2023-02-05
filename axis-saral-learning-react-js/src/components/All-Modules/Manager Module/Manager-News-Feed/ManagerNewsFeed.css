@@ -10,3 +10,12 @@
   justify-content: center; */
   margin-left: 40%;
 }
+
+.newsBackgro {
+  background-image: url("https://i.pinimg.com/originals/89/91/bf/8991bfdc5a4aff11e249187195b30dff.jpg");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  /* backdrop-blur: 10px; */
+  /* opacity: 0.8; */
+}

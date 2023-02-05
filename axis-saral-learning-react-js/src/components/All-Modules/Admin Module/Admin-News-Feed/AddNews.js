@@ -44,8 +44,12 @@ const AddNews = () => {
       newsDescription: enteredNewsDesc,
     };
 
-    axios.post("http://localhost:8088/news/add", productData);
-    console.log(empData);
+    axios
+      .post("http://localhost:8088/news/add", productData)
+      .then((response) => {
+        console.log(response);
+      });
+    // console.log(empData);
 
     empData.map((ele) => {
       let data = {
@@ -55,7 +59,7 @@ const AddNews = () => {
       };
 
       axios.post("http://localhost:8091/sendMail", data).then((response) => {
-        console.log(response);
+        console.log(response.data);
       });
     });
 
@@ -110,7 +114,8 @@ const AddNews = () => {
   return (
     <>
       <AdminNavigation />
-      <Card className="adminAdd">
+
+      <Card className="adminAdd" style={{ border: "solid gray 1px" }}>
         <Card.Header>
           <Nav variant="tabs">
             <Nav.Item>
@@ -134,7 +139,7 @@ const AddNews = () => {
             <div>
               <label>News Image Url</label>
               <input
-                type="url"
+                type="text"
                 required
                 ref={newsImgInputRef}
                 onChange={imageUrlOC}

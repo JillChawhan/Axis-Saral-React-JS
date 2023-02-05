@@ -15,3 +15,16 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.proj-flow-url {
+  width: 150px;
+  height: 150px;
+  transition: 0.4s;
+  border: solid gray 2px;
+  border-radius: 5px;
+}
+
+.proj-flow-url:hover {
+  width: 600px;
+  height: 500px;
+}

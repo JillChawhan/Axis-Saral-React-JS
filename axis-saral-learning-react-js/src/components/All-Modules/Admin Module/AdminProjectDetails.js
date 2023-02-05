@@ -129,6 +129,12 @@ const AdminProjectDetails = () => {
             <Card.Text> {projectData1.projectId} </Card.Text>
             <Card.Title>Project Description: </Card.Title>
             <Card.Text>{projectData1.projectDescription}</Card.Text>
+            <Card.Title> Project Flow Chart</Card.Title>
+            <img
+              src={projectData1.flowchartUrl}
+              alt="Project Flow Chart"
+              className="proj-flow-url"
+            />
             <hr />
           </Card.Body>
 
